@@ -2,6 +2,10 @@
   --background: #ffffff;
   --foreground: #171717;
 }
+h1, h2, h3 {
+  font-family: var(--font-inter);
+  font-weight: 900;
+}
 
 @media (prefers-color-scheme: dark) {
   :root {
