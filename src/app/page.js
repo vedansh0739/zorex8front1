@@ -460,7 +460,7 @@ export default function Home() {
           }} 
           paragraph
         >
-          Upload your purchase order, goods receipt, and invoice images to perform cross check and get flagged errors in case there exist some disparity.
+          Upload your purchase order, goods receipt, and invoice images to perform a cross-check and get flagged for any discrepancies found.
         </Typography>
         
         <Grid container spacing={3}>
