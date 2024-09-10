@@ -635,28 +635,30 @@ export default function Home() {
       )}
      
      
-     <Box mt={9} sx={{ position: 'relative', height: '20px', overflow: 'hidden' }}>
-        <svg
-          viewBox="0 0 1440 40"
-          preserveAspectRatio="none"
-          style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-          }}
-        >
-          <path
-            d="M0,20 Q15,5 30,20 T60,20 T90,20 T120,20 T150,20 T180,20 T210,20 T240,20 T270,20 T300,20 T330,20 T360,20 T390,20 T420,20 T450,20 T480,20 T510,20 T540,20 T570,20 T600,20 T630,20 T660,20 T690,20 T720,20 T750,20 T780,20 T810,20 T840,20 T870,20 T900,20 T930,20 T960,20 T990,20 T1020,20 T1050,20 T1080,20 T1110,20 T1140,20 T1170,20 T1200,20 T1230,20 T1260,20 T1290,20 T1320,20 T1350,20 T1380,20 T1410,20 T1440,20"
-            fill="none"
-            stroke="#a0a0a0"
-            strokeWidth="10"
-          />
-        </svg>
-      </Box>
+     
 
-      {(purchaseOrderText || goodsReceiptText || invoiceText) && (
+      {(purchaseOrderText || goodsReceiptText || invoiceText) && (<>
+
+<Box mt={9} sx={{ position: 'relative', height: '20px', overflow: 'hidden' }}>
+<svg
+  viewBox="0 0 1440 40"
+  preserveAspectRatio="none"
+  style={{
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+  }}
+>
+  <path
+    d="M0,20 Q15,5 30,20 T60,20 T90,20 T120,20 T150,20 T180,20 T210,20 T240,20 T270,20 T300,20 T330,20 T360,20 T390,20 T420,20 T450,20 T480,20 T510,20 T540,20 T570,20 T600,20 T630,20 T660,20 T690,20 T720,20 T750,20 T780,20 T810,20 T840,20 T870,20 T900,20 T930,20 T960,20 T990,20 T1020,20 T1050,20 T1080,20 T1110,20 T1140,20 T1170,20 T1200,20 T1230,20 T1260,20 T1290,20 T1320,20 T1350,20 T1380,20 T1410,20 T1440,20"
+    fill="none"
+    stroke="#a0a0a0"
+    strokeWidth="10"
+  />
+</svg>
+</Box>
         <Grid container spacing={3} mt={7}>
           {[
             { title: 'Purchase Order', state: purchaseOrderText },
@@ -672,7 +674,7 @@ export default function Home() {
               </Paper>
             </Grid>
           ))}
-        </Grid>
+        </Grid></>
       )}
 
 
