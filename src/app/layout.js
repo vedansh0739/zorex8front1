@@ -1,7 +1,7 @@
 
 export const metadata = {
-  title: 'Your App Name',
-  description: 'Your app description',
+  title: 'Zorex',
+  description: 'Accounts payable',
 }
 import './globals.css'
 import { Inter } from 'next/font/google'
